@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find your next green friend</title>
+    <script src="/main.js" defer></script>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
+</head>
+
+<body>
+    <img class="image" src="/images/background.png" alt="imageLogo" width="1440" height="500" >
+    <img class="image-mobile " src="/images/logoMobile.png" alt="imageLogoMobile" width="640" height="1184">
+
+    <div class="containerOptions">
+        <div class="options">
+            <img class="" src="/images/sun.png" alt="imageSun" width="75" height="75"></img>
+            <p class="textOptions">1. Set the amount of sunlight your plant will get.</p>
+            <select class="selectOption" id="sun" name="sunlight"></p>
+                <option value="">Select</option>
+                <option value="no">No</option>
+                <option value="low">Low</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+
+        <div class="options">
+            <img class="" src="/images/sprinkler.png" alt="imageSprinkler" width="103" height="75"></img>
+            <p class="textOptions">2. How often do you want to water your plant?</p>
+            <select class="selectOption" id="water" name="water"></p>
+                <option value="">Select</option>
+                <option value="regularly">Regularly</option>
+                <option value="daily">Daily</option>
+                <option value="rarely">Rarely</option>
+            </select>
+        </div>
+        <div class="options">
+            <img class="" src="/images/dog.png" alt="imageDog" width="75" height="62"></img>
+            <p class="textOptions">3. Do you have pets? Do they chew plants? </p>
+            <select class="selectOption" id="toxicity" name="pets"></p>
+                <option value="">Select</option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+    </div>
+
+    <ul id="plants-list"></ul>
+    <img class="noResults" id="noResults" src="/images/noResults.png" alt="noFilter" width="780" height="312"
+        style="display: none;"></img>
+
+
+</body>
+
+</html>
