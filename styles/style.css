@@ -1,7 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
+  font-style: normal;
   background-color: #f6f6f6;
+}
+
+.image-mobile {
+  display: none;
+  max-height: 1184px;
+}
+
+.image {
+  display: block;
 }
 
 .image {
@@ -12,18 +22,21 @@ body {
 }
 
 .containerOptions {
+  position: relative;
   background-color: #ffffff;
   width: 100%;
-  margin-left: 0%;
 }
 .containerOptions .options {
+  position: relative;
   display: inline-block;
-  margin-left: 10%;
+  left: 15%;
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: #ffffff;
+  padding-left: 5%;
 }
 .containerOptions .options .selectOption {
+  position: relative;
   height: 40px;
   width: 219px;
   box-sizing: border-box;
@@ -37,17 +50,32 @@ body {
   outline: none;
 }
 
+.picks {
+  position: relative;
+  top: 20px;
+  max-width: 500px;
+  width: 100%;
+  padding-left: 3%;
+  padding-bottom: 0.5%;
+}
+.picks p {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: -5px;
+}
+
 ul {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
-  margin-left: -3%;
-  margin-bottom: 20px;
 }
 ul li {
+  position: relative;
   display: inline-block;
   align-items: center;
-  margin-bottom: 16px;
   border-radius: 8px;
   padding: 15px;
   height: 100%;
@@ -56,7 +84,8 @@ ul li {
   max-width: 250px;
   background-color: #ffffff;
   text-align: center;
-  margin-left: 50px;
+  margin-left: 30px;
+  margin-bottom: 10px;
 }
 ul li img {
   height: 180px;
@@ -72,60 +101,57 @@ ul li img {
   width: 100%;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) {
   .image {
     display: none;
   }
   .image-mobile {
     display: block;
+    width: 134%;
+    height: 100%;
   }
   .containerOptions {
+    position: relative;
     background-color: #ffffff;
-    width: 100%;
-    margin-left: 55%;
+    width: 135%;
   }
-  .options {
-    margin-left: 5%;
+  .containerOptions .options {
+    padding-left: 0%;
     margin-top: 5%;
+    align-items: center;
+  }
+  .containerOptions .options .selectOption {
+    width: 300px;
+    height: 50px;
+  }
+  .picks {
+    padding-left: 25%;
   }
   ul {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 100%;
-    margin-left: 33%;
+    width: 120%;
+    font-size: 30px;
+    color: #1E6B4E;
+  }
+  ul li {
+    padding: 0;
+    padding-bottom: 105px;
+    height: 150%;
+    max-height: 300px;
+    width: 150%;
+    max-width: 350px;
+    margin-left: -15px;
+  }
+  ul li img {
+    width: 160px;
+    height: 230px;
+    margin-right: 16px;
   }
   .noResults {
-    margin-left: 50%;
-  }
-}
-@media only screen and (min-width: 322px) {
-  .image {
-    display: none;
-  }
-  .image-mobile {
-    display: block;
-  }
-  .containerOptions {
-    background-color: #ffffff;
-    width: 100%;
-    margin-left: 45%;
-  }
-  .options {
-    margin-left: 5%;
-    margin-top: 5%;
-  }
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-    margin-left: 30%;
-  }
-  .noResults {
-    margin-left: 50%;
+    margin-left: 28%;
   }
 }
 @media only screen and (min-width: 375px) {
@@ -134,26 +160,51 @@ ul li img {
   }
   .image-mobile {
     display: block;
+    width: 134%;
+    height: 100%;
   }
   .containerOptions {
+    position: relative;
     background-color: #ffffff;
-    width: 100%;
-    margin-left: 35%;
+    width: 135%;
   }
-  .options {
-    margin-left: 10%;
+  .containerOptions .options {
+    padding-left: 0%;
     margin-top: 5%;
+    align-items: center;
+  }
+  .containerOptions .options .selectOption {
+    width: 300px;
+    height: 50px;
+  }
+  .picks {
+    padding-left: 25%;
   }
   ul {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 100%;
-    margin-left: 22%;
+    width: 120%;
+    font-size: 30px;
+    color: #1E6B4E;
+  }
+  ul li {
+    padding: 0;
+    padding-bottom: 105px;
+    height: 150%;
+    max-height: 300px;
+    width: 150%;
+    max-width: 350px;
+    margin-left: 15px;
+  }
+  ul li img {
+    width: 160px;
+    height: 230px;
+    margin-right: 16px;
   }
   .noResults {
-    margin-left: 32%;
+    margin-left: 28%;
   }
 }
 @media only screen and (min-width: 425px) {
@@ -162,23 +213,49 @@ ul li img {
   }
   .image-mobile {
     display: block;
+    width: 134%;
+    height: 100%;
   }
   .containerOptions {
+    position: relative;
     background-color: #ffffff;
-    width: 100%;
-    margin-left: 25%;
+    width: 135%;
+    font-size: 20px;
   }
-  .options {
-    margin-left: 10%;
+  .containerOptions .options {
+    padding-left: 0%;
     margin-top: 5%;
+    align-items: center;
+  }
+  .containerOptions .options .selectOption {
+    width: 400px;
+    height: 50px;
+  }
+  .picks {
+    padding-left: 25%;
   }
   ul {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 100%;
-    margin-left: 18%;
+    width: 120%;
+    font-size: 30px;
+    color: #1E6B4E;
+  }
+  ul li {
+    padding: 0;
+    padding-bottom: 105px;
+    height: 150%;
+    max-height: 300px;
+    width: 150%;
+    max-width: 350px;
+    margin-left: 55px;
+  }
+  ul li img {
+    width: 160px;
+    height: 230px;
+    margin-right: 16px;
   }
   .noResults {
     margin-left: 28%;
@@ -192,69 +269,50 @@ ul li img {
   .image {
     display: block;
   }
-  .image {
-    display: block;
-    max-height: 500px;
-    height: 100%;
-    width: 100%;
-  }
   .containerOptions {
+    position: relative;
     background-color: #ffffff;
     width: 100%;
-    margin-left: 0%;
+    font-size: 20px;
   }
   .containerOptions .options {
-    display: inline-block;
-    margin-left: 10%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #ffffff;
+    padding-left: 20px;
+    margin-top: 5%;
+    align-items: center;
+    left: 190px;
   }
   .containerOptions .options .selectOption {
-    height: 40px;
-    width: 219px;
-    box-sizing: border-box;
-    border: 1px solid #a8a8a8;
-    border-radius: 19px;
-    font-weight: 300;
-    font-size: 14px;
-    color: #a8a8a8;
-    padding-left: 15px;
-    cursor: pointer;
-    outline: none;
+    width: 400px;
+    height: 50px;
+  }
+  .picks {
+    padding-left: 5%;
   }
   ul {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
-    margin-left: -3%;
     margin-bottom: 20px;
+    width: 95%;
+    font-size: 30px;
+    color: #1E6B4E;
   }
   ul li {
-    display: inline-block;
-    align-items: center;
-    margin-bottom: 16px;
-    border-radius: 8px;
-    padding: 15px;
+    padding: 0;
+    padding-bottom: 105px;
     height: 100%;
-    max-height: 250px;
+    max-height: 300px;
     width: 100%;
-    max-width: 250px;
-    background-color: #ffffff;
-    text-align: center;
-    margin-left: 50px;
+    max-width: 350px;
+    margin-left: 55px;
   }
   ul li img {
-    height: 180px;
-    width: 150px;
+    width: 160px;
+    height: 230px;
     margin-right: 16px;
   }
   .noResults {
-    margin-left: 30%;
-    max-height: 312px;
-    height: 100%;
-    max-width: 780px;
-    width: 100%;
+    margin-left: 28%;
   }
 }
 
