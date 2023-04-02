@@ -468,6 +468,12 @@ max-width: 280px;
     max-height: 1184px;
   }
   
+
+  .image-mobile {
+    display: none;
+    max-height: 1184px;
+  }
+  
   .image {
     position: relative;
     background-image: url("../images/background.png");
