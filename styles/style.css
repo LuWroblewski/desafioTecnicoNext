@@ -425,9 +425,7 @@ ul li img {
   .image {
     position: relative;
     background-image: url("../images/background.png");
-    background-size: cover;
     display: block;
-    height: 550px;
     width: 100%;
     margin: 0;
   }
